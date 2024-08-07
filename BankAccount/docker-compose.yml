@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  
+  sql_server:
+    
+    platform: linux/amd64
+    
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    
+    environment:
+
+      - ACCEPT_EULA=Y
+
+      - SA_PASSWORD=pusers***1234
+    
+    ports:
+
+      - "1433:1433"
